@@ -6,12 +6,12 @@
 </head>
 <body>
 <script>
-  let inRing = 'Hulk Hogan';
-  let onSide = 'The Rock';
+  let one = '1';
+  let two = '2';
+  let three = '3';
 
-  console.log(inRing, onSide);
-  [inRing, onSide] = [onSide, inRing];
-  console.log(inRing, onSide);
+  [one, two, three] = [three, two, one]; //flips contents without a template variable
+  console.log(one, two, three);
 
 </script>
 </body>
