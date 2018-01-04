@@ -11,10 +11,12 @@
       USD: amount * 0.76,
       GPB: amount * 0.53,
       AUD: amount * 1.01,
-      MEX: amount * 13.30
+      MEX: amount * 13.30,
+      BTC: amount * (1/15000)
     };
     return converted;
   }
+  console.log(convertCurrency(1000));
 
   function tipCalc({ total = 100, tip = 0.15, tax = 0.13 } = {}) {
     return total + (tip * total) + (tax * total);
